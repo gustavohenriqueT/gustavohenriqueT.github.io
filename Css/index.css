@@ -42,17 +42,3 @@ span{
     height: 10px;
     margin-right: 10px;
 }
-
-#button{
-    display: inline-block;
-    background-color: #F25A70;
-    box-shadow:5px 5px 0 black;
-    padding: 18px 20px;
-    margin-right: 0;
-    transition: trasform 200ms linear, background-color 200ms linear ;
-}
-
-#button:hover{
-    background-color: #2980b9; 
-    transform: scale(1.08);
-}
