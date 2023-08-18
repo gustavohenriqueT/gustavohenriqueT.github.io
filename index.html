@@ -11,11 +11,13 @@
     <link rel="stylesheet" href="Css/reset.css">
     <link rel="stylesheet" href="Css/index.css">
     <link rel="stylesheet" href="Css/components/header.css">
+    <link rel="stylesheet" href="Css/components/banner.css">
     <link rel="stylesheet" href="Css/components/title.css">
     <link rel="stylesheet" href="Css/components/subtitle.css">
     <link rel="stylesheet" href="Css/components/box.css">
     <link rel="stylesheet" href="Css/components/button.css">
     <link rel="stylesheet" href="Css/components/action.css">
+
     
 </head>
 <body>
@@ -29,13 +31,19 @@
             <a class="button" href="" lang="eng">Download CV</a>
         </nav>
     </header>
-    
-    <div class="box">   
-        <h1 class="title">Gustavo Henrique</h1>   <!-- heading 1-->
-        <h2 class="subtitle">BackEnd/FrontEnd Developer</h2>
-    </div>
 
-    <a class="button" href="" lang="eng">Download CV</a>
-    <a class="button" href="" >Contatos</a>
+    <section class="banner">   <!-- Há valor semantico, tudo que está dentro se comunica -->
+        <div class="wrapper">
+            <div class="box"> <!-- Div não tem valor semantico-->
+                <h1 class="title">Gustavo Henrique</h1>   <!-- heading 1-->
+                <h2 class="subtitle">BackEnd/FrontEnd Developer</h2>
+            </div>
+            
+            <div class="navigation">
+                <a class="button" href="" lang="eng">Download CV</a>
+                <a class="button" href="" >Contatos</a>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
