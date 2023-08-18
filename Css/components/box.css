@@ -1,4 +1,4 @@
-#box{
+.box{
     display: inline-block;
     background-color: #3a4042;
     box-shadow: 10px 10px 0 #000;
@@ -6,7 +6,6 @@
     padding: 44px 44px;
 }
 
-#box h1{ /*defines which element inside the box I want to change*/
+.box .title{ /*defines which element inside the box I want to change*/
     margin-bottom: 28px;
-
 }
