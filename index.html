@@ -13,11 +13,13 @@
     <link rel="stylesheet" href="Css/components/header.css">
     <link rel="stylesheet" href="Css/components/banner.css">
     <link rel="stylesheet" href="Css/components/section.css">
-    <link rel="stylesheet" href="Css/components/title.css">
+    <link rel="stylesheet" href="Css/components/main-title.css">
     <link rel="stylesheet" href="Css/components/subtitle.css">
     <link rel="stylesheet" href="Css/components/box.css">
     <link rel="stylesheet" href="Css/components/button.css">
     <link rel="stylesheet" href="Css/components/action.css">
+    <link rel="stylesheet" href="Css/components/skill-tec.css">
+    <link rel="stylesheet" href="Css/components/progress-bar.css">
 
     
 </head>
@@ -36,7 +38,7 @@
         <section class="banner">   <!-- Há valor semantico, tudo que está dentro se comunica -->
             <div class="wrapper">
                 <div class="box"> <!-- Div não tem valor semantico-->
-                    <h1 class="title">Gustavo Henrique</h1>   <!-- heading 1-->
+                    <h1 class="main-title">Gustavo Henrique</h1>   <!-- heading 1-->
                     <h2 class="subtitle">BackEnd/FrontEnd Developer</h2>
                 </div>
                 
@@ -48,12 +50,22 @@
         </section>
         
         <section class="section">
-            <h1 class="title -second">Skills</h1>
-        </section>
-    
+            <h1 class="main-title -second">Skills</h1>
 
+            <article class="skill-tec"> 
+                <img class="icon" src="img/html.png" alt="Logo do HTML5">
+                <div class="right">
+                    <h2 class="title">HTML</h1>
+                    <progress class="progress-bar" max="100" value="60">
+                        60%
+                    </progress>
+                </div>
+            </article>
+        </section>
 </body>
 </html>
+
+
 
 
 
@@ -61,3 +73,7 @@
         <!-- Emmit {}-Nome dentro da <>-->
         <!-- Emmit []- Cria um =""-->
         <!-- Emmit Nome.NomedaClasse - Cria uma classe-->
+        <!-- Uma palavra = Elemento; Duas palavras por um "-" = Componente-->
+        <!-- dl class="" Desciption List-->
+        <!-- dd class="" Define Description-->
+        <!-- dt class="" Description Title-->
