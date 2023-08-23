@@ -1,5 +1,5 @@
 .banner{
-    box-sizing: content-box;
+    box-sizing: border-box;
     background-color: #1081FA;
     height: 800px;
     border-bottom: 10px solid #000;
