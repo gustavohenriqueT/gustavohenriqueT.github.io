@@ -1,0 +1,12 @@
+.main-card{
+    background-color: #000;
+    height: 520;
+}
+
+.main-card .main-title{
+    color: #fff;
+    font-family: 'Press Start 2P', sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 25px;
+}
