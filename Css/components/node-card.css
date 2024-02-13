@@ -11,7 +11,7 @@
     box-sizing: border-box;
     height: 0px;
     width: 45px;
-    border-top: 2.5px dashed #000;
+    border-top: 3.9px dashed #000;
     transform: rotate(90deg) translateX(-62%);
     bottom: 140px;
 }
