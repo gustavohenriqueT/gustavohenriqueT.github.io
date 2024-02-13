@@ -1,10 +1,10 @@
 .main-banner{
-    box-sizing: border-box;
     background-color: #1081FA;
     height: 800px;
     border-bottom: 10px solid #000;
-    padding-top: 115px;
-    padding-left: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
