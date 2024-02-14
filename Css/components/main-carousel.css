@@ -53,5 +53,5 @@
 .main-carousel .elements{
     display: flex;
     justify-content: space-between;
-    transform: translateX(100px);
+    transition: transform 100ms ease-in-out;
 }
