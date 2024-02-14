@@ -7,7 +7,8 @@
     font-size: 20px;
     color: #fff;
     text-decoration: none;
-    transition: trasform 200ms linear, background-color 200ms linear ;
+    transition: trasform 200ms linear, background-color 200ms linear;
+    cursor: pointer;
     
 }
 
@@ -18,4 +19,8 @@
 
 .main-button.-form{
     width: 100%;
+}
+
+.main-button.-form:hover{
+    transform: scale(1.01);
 }
