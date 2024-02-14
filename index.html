@@ -38,11 +38,11 @@
         <header class="main-header">
             <h3>GHenrique</h3>
             <nav>
-                <a class="main-action" lang="en">Skills</a>
-                <a class="main-action ">Projetos</a>
-                <a class="main-action">Sobre</a>
-                <a class="main-action">Contatos</a>
-                <a class="main-button" href="" lang="eng">Download CV</a>
+                <a href="#skills" class="main-action" lang="en">Skills</a>
+                <a href="#projetos" class="main-action ">Projetos</a>
+                <a href="#sobre" class="main-action">Sobre</a>
+                <a href="#contatos" class="main-action">Contatos</a>
+                <a href="img/CvTiAt.pdf" class="main-button" lang="eng" target="_blank">Download CV</a>
             </nav>
         </header>
 
@@ -54,14 +54,14 @@
                 </div>
                 
                 <div class="navigation">
-                    <a class="main-button" href="" lang="eng">Download CV</a>
-                    <a class="main-button" href="" >Contatos</a>
+                    <a class="main-button" href="img/CvTiAt.pdf" lang="eng">Download CV</a>
+                    <a class="main-button" href="#contatos" target="_blank">Contatos</a>
                 </div>
             </div>
         </section>
         
         <section class="main-section">
-            <h1 class="main-title -second">Skills</h1>
+            <h1 class="main-title -second" id="skills">Skills</h1>
 
             <div class="wrapper-skill">
                 <article class="skill-tec"> 
@@ -146,7 +146,7 @@
         </section>
 
         <section class="main-section  -bgBlack -bdFirst">
-            <h2 class="main-title -second">Projetos</h2>
+            <h2 class="main-title -second" id="projetos">Projetos</h2>
 
             <div class="wrapper-card">
                 <a href="http://3.22.61.238:3007/" target="_blank">
@@ -164,7 +164,7 @@
         </section>
 
         <section class="main-section -bgSecond -bdBlack">
-            <h2 class="main-title -second">Sobre</h2>
+            <h2 class="main-title -second" id="sobre">Sobre</h2>
 
              <section class="main-carousel">
                 <button class="button-arrow -left"><span class="content">Avançar</span></button>    
@@ -217,20 +217,23 @@
 
             </section>
 
-            <form class="main-form">
+            <form action="https://api.web3forms.com/submit" method="POST" class="main-form">
+                <input type="hidden" name="access_key" value="b37dcd70-d0a0-43be-a852-61f87c3db264">
 
-                <legend class="main-title -second">Contatos</legend>
+                <legend class="main-title -second" id="contatos">Contatos</legend>
 
                 <label class="main-label" for="name">Nome</label>
-                <input class="main-input" id="name" type="text" required>
+                <input class="main-input" name="name" type="text" required>
 
                 <label class="main-label" for="email">Email</label>
-                <input class="main-input" id="email" type="email" required>
+                <input class="main-input" name="email" type="email" required>
 
                 <label class="main-label" for="message">Mensagem</label>
-                <textarea class="main-input -textarea" id="message" required></textarea>
+                <textarea class="main-input -textarea"name="message" required></textarea>
 
-               <button class="main-button -form" type="submit">Enviar</button>
+                <input type="hidden" name="subject" value="Nova Mensagem do Portifólio">
+                <button class="main-button -form" type="submit">Enviar</button>
+                <input type="hidden" name="redirect" value="https://web3forms.com/success?title=Obrigado%20Pelo%20Contato&desc=Responderei%20o%20mais%20rapido%20possivel!" />
 
             </form>
 
@@ -247,8 +250,13 @@
                         <img src="img/iconInstagram.png" alt="Icon Instagram">
                     </a>
             </footer>
-            
+        <script src="https://web3forms.com/client/script.js" async defer></script>
         <script src="js/components/main-carousel.js"></script>
+        <script>
+            window.onload = function() {
+                document.getElementById("form").reset();
+            };
+        </script>
 </body>
 </html>
 
