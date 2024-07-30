@@ -3,3 +3,15 @@ h3{
     color: #FFF;
     text-shadow: 5px 5px 0 black ;
 }
+
+@media (min-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    body {
+      font-size: 18px;
+    }
+  }
