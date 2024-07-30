@@ -6,3 +6,15 @@
     border-bottom: 10px solid #000;
     padding: 10px 20px;
 }
+
+@media (min-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    body {
+      font-size: 18px;
+    }
+  }

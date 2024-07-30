@@ -12,3 +12,15 @@
 .main-input.-textarea{
     height: 320px;
 }
+
+@media (min-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    body {
+      font-size: 18px;
+    }
+  }

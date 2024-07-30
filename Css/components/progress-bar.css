@@ -15,3 +15,15 @@
 .progress-bar::-webkit-progress-value{
     background-color: #7C5E99
 }
+
+@media (min-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    body {
+      font-size: 18px;
+    }
+  }
