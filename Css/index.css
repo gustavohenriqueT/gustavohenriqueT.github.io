@@ -1,17 +1,65 @@
+body {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 h3{
     font-family: "Press Start 2P", sans-serif;
     color: #FFF;
     text-shadow: 5px 5px 0 black ;
 }
 
-@media (min-width: 768px) {
-    body {
+
+@media (max-width: 1024px) {
+  body {
       font-size: 16px;
-    }
   }
   
-  @media (min-width: 1024px) {
-    body {
-      font-size: 18px;
-    }
+  .main-header nav {
+      flex-direction: column;
+      align-items: center;
   }
+}
+
+@media (max-width: 768px) {
+  .main-header {
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .wrapper-skill {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  
+  .skill-tec {
+      width: 100%;
+      text-align: center;
+  }
+  
+  .progress-bar {
+      width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-title {
+      font-size: 20px;
+      text-align: center;
+  }
+  
+  .navigation {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .navigation .main-button {
+      width: 100%;
+      margin: 5px 0;
+  }
+}
